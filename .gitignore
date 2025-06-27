@@ -1,0 +1,36 @@
+# Ignore common Python files
+*.pyc
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store # macOS specific
+
+# Ignore virtual environment folders
+venv/
+env/
+.env/
+
+# Ignore saved models (they can be large and are outputs, not source code)
+models/*.pkl
+models/*.h5 # If you ever use Keras/TensorFlow models
+models/*.pt # If you ever use PyTorch models
+
+# Ignore data files that are too large or should not be version controlled
+# The raw input data is often fine, but large processed data might be ignored.
+# For this project, your 'telco_customer_churn_cleaned_encoded.csv' and 'telco_customer_churn_final_features.csv'
+# are processed and could be large. You might choose to ignore them and only keep the raw data.
+# Or, if they are small enough, keep them to make the repo runnable directly.
+# Let's include the processed ones for now, but keep this in mind.
+# data/telco_customer_churn_cleaned_encoded.csv
+# data/telco_customer_churn_final_features.csv
+
+# Ignore Jupyter Notebook specific files
+.ipynb_checkpoints/
+
+# IDE specific files (e.g. VS Code)
+.vscode/
+
+# Logs
+*.log
+
+# Misc
+*.zip

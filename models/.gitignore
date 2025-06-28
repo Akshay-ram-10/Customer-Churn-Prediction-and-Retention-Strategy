@@ -1,0 +1,24 @@
+# Ignore common Python files
+*.pyc
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store # macOS specific
+
+# Ignore virtual environment folders
+venv/
+env/
+.env/
+
+# Ignore saved models (they can be large and are outputs, not source code)
+models/*.pkl
+models/*.h5 # If you ever use Keras/TensorFlow models
+models/*.pt # If you ever use PyTorch models
+
+# Logs
+*.log
+
+# IDE specific files (e.g. VS Code)
+.vscode/
+
+# Misc
+*.zip
